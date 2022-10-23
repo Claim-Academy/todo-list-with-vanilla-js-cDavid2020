@@ -3,13 +3,11 @@ module.exports = {
     browser: true,
     es2022: true,
   },
-  extends: ["xo", "prettier"],
+  extends: ["standard", "prettier"],
+  overrides: [],
   parserOptions: {
+    ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {
-    "capitalized-comments": "off",
-    "new-cap": "off",
-    "no-unused-vars": "warn",
-  },
+  rules: {},
 };
